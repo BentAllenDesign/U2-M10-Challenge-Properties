@@ -10,7 +10,7 @@ spring:
         - 192.168
         - 10.0
   datasource:
-    url: jdbc:h2:file:./gamestoreDB
+    url: jdbc:h2:file:./gamestoreDB;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false
     driverClassName: org.h2.Driver
     username: sa
     password: password
