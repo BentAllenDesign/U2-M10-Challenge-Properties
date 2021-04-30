@@ -1,16 +1,16 @@
 server:
-  port: 6868
+  port: 8080
 
 spring:
   application:
-    name: comment-service
+    name: game-store-service
   cloud:
     inetutils:
       preferredNetworks:
         - 192.168
         - 10.0
   datasource:
-    url: jdbc:h2:file:./commentsDB
+    url: jdbc:h2:file:./gamestoreDB
     driverClassName: org.h2.Driver
     username: sa
     password: password
