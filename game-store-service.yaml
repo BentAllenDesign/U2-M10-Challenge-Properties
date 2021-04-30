@@ -19,7 +19,7 @@ spring:
     generate-ddl: true
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
 eureka:
   client:
     service-url:
