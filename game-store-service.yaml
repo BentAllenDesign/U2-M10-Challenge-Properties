@@ -14,7 +14,6 @@ spring:
     #driverClassName: org.h2.Driver
     #username: sa
     #password: password
-    initialization-mode: always
     url: jdbc:mysql://game-store.cg8j1mqqwm9z.us-east-2.rds.amazonaws.com:3306/game_store?useSSL=false&serverTimezone=US/Eastern&allowPublicKeyRetrieval=true
     username: root
     password: rootroot
@@ -28,7 +27,7 @@ eureka:
   client:
     serviceUrl:
       #eureka-server is the name of the docker container running the eureka server instance
-      defaultZone: http://eureka-server:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
   instance:
     #eureka-server is the name of the docker container running the eureka server instance
-    hostname: eureka-server
+    hostname: localhost
