@@ -27,6 +27,8 @@ spring:
 eureka:
   client:
     serviceUrl:
+      #eureka-server is the name of the docker container running the eureka server instance
       defaultZone: http://eureka-server:8761/eureka/
   instance:
+    #eureka-server is the name of the docker container running the eureka server instance
     hostname: eureka-server
